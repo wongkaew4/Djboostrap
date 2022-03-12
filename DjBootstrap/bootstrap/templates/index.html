@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Starter Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        body {
+            padding-top: 5rem;
+        }
+
+        .starter-template {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+</head>
+
+<body id="feature">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Wongkaew_4 shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main role="main" class="container">
+
+        <div class="starter-template">
+            <h1>MacBook Pro M1 Pro/ M1 Max</h1>
+            <p class="lead">MacBook Pro ที่ทรงพลังยิ่งกว่าครั้งไหนๆ มาถึงแล้ว ด้วยชิป M1 Pro หรือ M1 Max ที่เร็วสุดขั้ว และยังเป็น Apple Silicon ตัวแรกที่ออกแบบมาสำหรับมือโปร เพื่อให้คุณได้สัมผัสกับประสิทธิภาพการทำงานสุดล้ำและแบตเตอรี่ที่ใช้งานได้นานอย่างยอดเยี่ยม ยิ่งไปกว่านั้นยังมีจอภาพ Liquid Retina XDR ที่สวยงามน่าทึ่ง พร้อมด้วยกล้องและระบบเสียงที่ดีที่สุดเท่าที่เคยมีมาในโน้ตบุ๊ก Mac และยังมีครบทุกพอร์ตที่คุณต้องการด้วย เรียกว่าเป็นครั้งแรกในโน้ตบุ๊กระดับเดียวกัน ซึ่งบอกเลยว่า MacBook Pro
+                เครื่องนี้คือเหลือร้ายเลยล่ะ</p>
+        </div>
+        <img src="https://mpics.mgronline.com/pics/Images/564000010556601.JPEG" class="img-fluid" alt="...">
+        
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">M1 Pro เร็วทะลุโลก</h5>
+                  <p class="card-text">CPU สูงสุดแบบ 10 core และ GPU สูงสุดแบบ 16 core หน่วยความจำแบบรวมขนาดสูงสุด 32GB แบนด์วิดท์หน่วยความจำสูงสุด 200GB/s</p>
+                  <a href="/page1" class="btn btn-primary">ดูข้อมูล</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">M1 Max เร็วทะลุจักรวาล</h5>
+                  <p class="card-text">CPU แบบ 10 core และ GPU สูงสุดแบบ 32 core หน่วยความจำแบบรวมขนาดสูงสุด 64GB แบนด์วิดท์หน่วยความจำสูงสุด 400GB/s</p>
+                  <a href="/page2" class="btn btn-primary">ดูข้อมูล</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 style = "padding-top: 5%; padding-bottom: 5%; " id = "spec"> รับโปรโมชั่นวันนี้ !!</h2>
+          <small>แพคเกจสุดคุ้มรับไปเลยส่วนลด 10% เพียงสมัครกับ Wongkaew_4 Shop วันนี้</small>
+          <form style="padding-bottom: 5%;" action = "addForm" method = "post">
+              {% csrf_token %}
+              <label> ชื่อ นามสกุล: </label>
+              <input id ="customer_name" type = "text" name = "customer_name"><br>
+              <label> อีเมล: </label>
+              <input id ="customer_email" type = "email" name = "customer_email"><br>
+              <label> เบอร์โทรติดต่อ: </label>
+              <input id ="customer_tel" type = "tel" name = "customer_tel" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+              <input type = "submit" value="สมัครใช้บริการ">
+          </form>
+    </main><!-- /.container -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
